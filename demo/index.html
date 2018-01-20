@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style type="text/css">
+
+body{
+  background-color: #eff2f7;
+}
+
+.pl-30{
+  padding-left: 30px;
+}
+
+.mr-0{
+  margin-right: 0px;
+}
+
+.wrapper {
+
+}  
+
+#sidebar {
+    min-height: 88vh;
+  
+}
+
+/**
+#sidebar.active {
+    margin-left: -250px;
+}
+**/
+
+#sidebar a[data-toggle="collapse"] {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: .5px;
+}
+
+#sidebar a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    display: block;
+    position: absolute;
+    right: 20px;
+}
+
+#sidebar a[aria-expanded="true"]::before {
+    content: '\02C4';
+}
+
+#sidebar a[aria-expanded="false"]::before {
+    content: '\02C5';
+}
+
+.data_content {
+    
+}
+
+.data_content .recen h4 {
+    padding-left: 30px;
+    border-bottom: 1px solid #e8e9eb;
+    font-size: 15px;
+    padding-bottom: 17px;
+    padding-top: 17px;
+  background-color: #f2f3f8;
+}
+
+
+
+/*
+    ADDITIONAL STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+
+
+/** custom **/
+
+header {
+    border-bottom: 1px solid #e8e9eb;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  background-color: #fff;
+}
+
+header .logo {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+header .navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+header .user {
+    float: right;
+    padding-right: 50px;
+}
+
+header .user a{
+    color: #60c4de;
+    font-weight: 600;
+  text-decoration: none;
+}
+
+header .user img {
+    width: 50px;
+}
+
+#sidebar {
+    background: #454d58;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #505a64;
+}
+
+#sidebar ul li a {
+    padding: 15px 20px;
+    display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+#sidebar ul li a .fa {
+    padding-right: 15px;
+    color: #8b93a0;
+  font-size: 15px;
+}
+
+#sidebar ul li a:hover {
+    background: #505a64;
+}
+
+#sidebar ul li:hover .fa {
+    color: #60c4de;
+}
+
+#sidebar ul li.active > .fa {
+    color: #60c4de;
+}
+
+
+.data_content {
+  min-height: 87vh;
+  position: relative;
+}
+
+.data_content .ftr h4 {
+    font-size: 14px;
+  margin-bottom: 0;
+}
+
+.data_content .ftr {
+  border-top: 1px solid #e8e9eb;
+  padding: 15px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.data_content .ftr h4 span {
+    color: #60c4de;
+}
+
+.data_content .breadc {
+  padding-left: 30px;
+  border-bottom: 1px solid #e8e9eb;
+  font-size: 15px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  background-color: #fff;
+  margin-bottom: 0;
+}
+
+.recen {
+    margin: 20px;
+    border: 1px solid #e8e9eb;
+  background-color: #fff;
+}
+
+.data_content table {
+    width: 95%;
+    border: 1px solid #e8e9eb;
+    margin: 25px;
+}
+
+.data_content table tr th {
+    border: 1px solid #e8e9eb;
+  padding: 10px;
+}
+
+.data_content table tr td {
+    border: 1px solid #e8e9eb;
+  padding: 10px;
+}
+
+/** next **/
+
+.data_content table tr th img {
+    width: 20px;
+  float: right;
+  margin-top: 5px;
+}
+
+.data_content table tr:nth-child(even) td{
+  background-color: #f3f3f3;
+}
+
+.data_content table tr td:last-child{
+  color: #60c4de;
+}
+
+.data_content table tr td:nth-child(5) span {
+  font-size: 11px;
+  background-color: #60c4de;
+  padding: 2px;
+  font-weight: 700;
+}
+
+.row.m-25 {
+    margin: 25px;
+        margin-left: 25px;
+    margin-left: 10px;
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    border: 1px solid #888;
+    width: 80%;
+  border-radius: 0;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal-content h3 {
+    background-color: #f4f5f7;
+    font-size: 14px;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-bottom: 1px solid #e8e9eb;
+}
+
+.modal-content .box h6 {
+    font-size: 14px;
+}
+
+.modal-content .box {
+    padding: 5px 15px;
+}
+
+.modal-content h5 {
+    padding-left: 15px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.modal-content table {
+    width: 97%;
+    margin: 0 15px;
+    font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.modal-content table tr th{
+  border-bottom: 1px solid #e8e9eb;
+  padding: 10px;
+}
+
+.modal-content table tr td {
+    border-bottom: 1px solid #e8e9eb;
+    padding: 10px;
+}
+
+.modal-content table tbody tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+  .alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+ .modal-content {
+  position: fixed !important;
+  right: 1%;
+  top: 15%;
+  z-index: 999;
+} 
+
+.data_content table tr td:last-child {
+  cursor: all-scroll;
+}
+.close {
+  color: #000;
+  cursor: all-scroll;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.5;
+  text-shadow: 0 1px 0 #fff;
+}
+
+</style>
+
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>testjob</title>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script> 
+<script src="https://unpkg.com/vue@2.3.3/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+
+
+
